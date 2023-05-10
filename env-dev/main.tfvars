@@ -10,6 +10,11 @@ parameters = [
   { name="dev.catalogue_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
   { name="dev.user_service.mongo", value="MONGO=true" },
   { name="dev.user_service.host_redis", value="redis-dev.rpadaladevops.online" },
-  { name="dev.user_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" }
+  { name="dev.user_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
+  { name="dev.cart_service.host_redis", value="redis-dev.rpadaladevops.online" },
+  { name="dev.cart_service.host_catalogue", value="catalogue-dev.rpadaladevops.online" },
+  { name="dev.cart_service.port_catalogue", value="8080" }
+
 ]
+
 
