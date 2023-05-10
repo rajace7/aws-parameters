@@ -16,13 +16,19 @@ parameters = [
   { name="dev.shipping_service.endpoint_cart", value="cart-dev.rpadaladevops.online:8080" },
   { name="dev.shipping_service.host_mysql", value="mysql-dev.rpadaladevops.online" },
   { name="dev.shipping_schema.username_mysqlsource", value="root" },
-  { name="dev.shipping_schema.password_mysqlsource", value="RoboShop@1" },
   { name="dev.payment_service.host_cart", value="cart-dev.rpadaladevops.online" },
   { name="dev.payment_service.port_cart", value="8080" },
   { name="dev.payment_service.host_user", value="user-dev.rpadaladevops.online" },
   { name="dev.payment_service.port_user", value="8080" },
   { name="dev.payment_service.host_rabbitmq", value="rabbitmq-dev.rpadaladevops.online" },
   { name="dev.payment_service.username_rabbitmq", value="roboshop" },
+
+
+]
+
+passwords = [
+
+  { name="dev.shipping_schema.password_mysqlsource", value="RoboShop@1" },
   { name="dev.payment_service.password_rabbitmq", value="roboshop123" }
 
 ]
