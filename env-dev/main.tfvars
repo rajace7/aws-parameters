@@ -1,5 +1,4 @@
 parameters = [
-
   { name="dev.frontend.catalogue_url", value="http://catalogue-dev.rpadaladevops.online:8080/" },
   { name="dev.frontend.cart_url", value="http://cart-dev.rpadaladevops.online:8080/" },
   { name="dev.frontend.user_url", value="http://user-dev.rpadaladevops.online:8080/" },
@@ -13,8 +12,13 @@ parameters = [
   { name="dev.user_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
   { name="dev.cart_service.host_redis", value="redis-dev.rpadaladevops.online" },
   { name="dev.cart_service.host_catalogue", value="catalogue-dev.rpadaladevops.online" },
-  { name="dev.cart_service.port_catalogue", value="8080" }
-
+  { name="dev.cart_service.port_catalogue", value="8080" },
+  { name="dev.shipping_service.endpoint_cart", value="cart-dev.rpadaladevops.online:8080" },
+  { name="dev.shipping_service.host_mysql", value="mysql-dev.rpadaladevops.online" },
+  { name="dev.shipping_schema.username_mysqlsource", value="root" },
+  { name="dev.shipping_schema.password_mysqlsource", value="RoboShop@1" },
 ]
+
+
 
 
