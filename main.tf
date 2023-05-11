@@ -4,7 +4,7 @@ resource "aws_ssm_parameter" "parameters" {
   name  = var.parameters[count.index].name
   value = var.parameters[count.index].value
   type  = "String"
-  key_id = "dd8e81e7-b522-45d1-b0ae-e02df6b2243f"
+  key_id = "16058d6a-d5b1-4ae3-bd08-5da099acd469"
 
 }
 
@@ -14,6 +14,6 @@ resource "aws_ssm_parameter" "passwords" {
   name  = var.passwords[count.index].name
   value = var.passwords[count.index].value
   type  = "SecureString"
-  key_id = "dd8e81e7-b522-45d1-b0ae-e02df6b2243f"
+  key_id = "16058d6a-d5b1-4ae3-bd08-5da099acd469"
 
 }
