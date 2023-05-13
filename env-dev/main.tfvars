@@ -21,7 +21,7 @@ parameters = [
   { name="dev.payment_service.host_user", value="user-dev.rpadaladevops.online" },
   { name="dev.payment_service.port_user", value="8080" },
   { name="dev.payment_service.host_rabbitmq", value="rabbitmq-dev.rpadaladevops.online" },
-  { name="dev.payment_service.username_rabbitmq", value="roboshop" },
+  { name="dev.payment_service.username_rabbitmq", value="roboshop" }
 
 
 ]
