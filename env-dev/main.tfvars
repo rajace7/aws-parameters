@@ -4,32 +4,32 @@ parameters = [
   { name="dev.frontend.user_url", value="http://user-dev.rpadaladevops.online:8080/" },
   { name="dev.frontend.shipping_url", value="http://shipping-dev.rpadaladevops.online:8080/" },
   { name="dev.frontend.payment_url", value="http://payment-dev.rpadaladevops.online:8080/" },
-  { name="dev.catalogue_schema.host_mongosource", value="mongod-dev.rpadaladevops.online" },
-  { name="dev.catalogue_service.mongo", value="MONGO=true" },
-  { name="dev.catalogue_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
-  { name="dev.user_service.mongo", value="MONGO=true" },
-  { name="dev.user_service.host_redis", value="redis-dev.rpadaladevops.online" },
-  { name="dev.user_service.host_mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
-  { name="dev.cart_service.host_redis", value="redis-dev.rpadaladevops.online" },
-  { name="dev.cart_service.host_catalogue", value="catalogue-dev.rpadaladevops.online" },
-  { name="dev.cart_service.port_catalogue", value="8080" },
-  { name="dev.shipping_service.endpoint_cart", value="cart-dev.rpadaladevops.online:8080" },
-  { name="dev.shipping_service.host_mysql", value="mysql-dev.rpadaladevops.online" },
-  { name="dev.shipping_schema.username_mysqlsource", value="root" },
-  { name="dev.payment_service.host_cart", value="cart-dev.rpadaladevops.online" },
-  { name="dev.payment_service.port_cart", value="8080" },
-  { name="dev.payment_service.host_user", value="user-dev.rpadaladevops.online" },
-  { name="dev.payment_service.port_user", value="8080" },
-  { name="dev.payment_service.host_rabbitmq", value="rabbitmq-dev.rpadaladevops.online" },
-  { name="dev.payment_service.username_rabbitmq", value="roboshop" }
+  { name="dev.catalogue.mongo_endpoint", value="mongod-dev.rpadaladevops.online" },
+  { name="dev.catalogue.mongo", value="MONGO=true" },
+  { name="dev.catalogue.mongo_url", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
+  { name="dev.user.mongo", value="MONGO=true" },
+  { name="dev.user.redis_host", value="redis-dev.rpadaladevops.online" },
+  { name="dev.user.mongo_endpoint", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
+  { name="dev.cart.redis_host", value="redis-dev.rpadaladevops.online" },
+  { name="dev.cart.catalogue_host", value="catalogue-dev.rpadaladevops.online" },
+  { name="dev.cart.catalogue_port", value="8080" },
+  { name="dev.shipping.cart_endpoint", value="cart-dev.rpadaladevops.online:8080" },
+  { name="dev.shipping.db_host", value="mysql-dev.rpadaladevops.online" },
+  { name="dev.shipping.db_user", value="root" },
+  { name="dev.payment.cart_host", value="cart-dev.rpadaladevops.online" },
+  { name="dev.payment.cart_port", value="8080" },
+  { name="dev.payment.user_host", value="user-dev.rpadaladevops.online" },
+  { name="dev.payment.user_port", value="8080" },
+  { name="dev.payment.amqp_host", value="rabbitmq-dev.rpadaladevops.online" },
+  { name="dev.payment.amqp_user", value="roboshop" }
 
 
 ]
 
 passwords = [
 
-  { name="dev.shipping_schema.password_mysqlsource", value="RoboShop@1" },
-  { name="dev.payment_service.password_rabbitmq", value="roboshop123" }
+  { name="dev.payment.amqp_pass", value="RoboShop@1" },
+  { name="dev.shipping.db_pass", value="roboshop123" }
 
 ]
 
