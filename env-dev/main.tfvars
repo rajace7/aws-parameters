@@ -6,7 +6,7 @@ parameters = [
   { name="dev.frontend.payment_url", value="http://payment-dev.rpadaladevops.online:8080/" },
   { name="dev.catalogue.mongo_endpoint", value="mongod-dev.rpadaladevops.online" },
   { name="dev.catalogue.mongo", value="DOCUMENTDB=true" },
-    { name="dev.user.mongo", value="MONGO=true" },
+  { name="dev.user.mongo", value="MONGO=true" },
   { name="dev.user.redis_host", value="redis-dev.rpadaladevops.online" },
   { name="dev.user.mongo_endpoint", value="mongodb://mongod-dev.rpadaladevops.online:27017/catalogue" },
   { name="dev.cart.redis_host", value="redis-dev.rpadaladevops.online" },
